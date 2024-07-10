@@ -1,3 +1,5 @@
-module.exports = function () {
-  return 'npm-package-template';
-};
+import { detectFace } from "./src/FaceDetection";
+
+export {
+  detectFace
+}

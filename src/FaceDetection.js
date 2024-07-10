@@ -7,7 +7,7 @@ async function detectFace(config = {
         // by, e.g., operating on a reduced scale or looking for large features.
         fastMode: false
       },
-      cb
+      cb: (frame) => {console.log(frame)}
 }) {
     const faceDetector = new FaceDetector(config.face_detection_options);
       try {
@@ -24,4 +24,8 @@ async function detectFace(config = {
       } catch (e) {
         console.error('Face detection failed:', e);
       }
+}
+
+export {
+    detectFace
 }
