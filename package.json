@@ -1,6 +1,6 @@
 {
   "name": "@mastashake08/video-transforms",
-  "version": "1.0.0-alpha",
+  "version": "v0.1.0",
   "description": "npm package template.",
   "author": "Jyrone Parker <jyrone.parker@gmail.com>",
   "main": "index.js",
