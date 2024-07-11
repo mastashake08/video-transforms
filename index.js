@@ -1,5 +1,6 @@
-import { detectFace } from "./src/FaceDetection";
+import { detectFace,grabFrames } from "./src/Transforms";
 
 export {
-  detectFace
+  detectFace,
+  grabFrames
 }

@@ -26,6 +26,30 @@ async function detectFace(config = {
       }
 }
 
+const grabFrames = new TransformStream({
+  start(controller) {
+    this.videoFrames = []
+   
+  },
+  transform(videoFrame, controller) {
+    try {
+      const frame = videoFrame.clone()
+      videoFrame.close()
+      
+      this.videoFrames.push(frame);
+      const evt = new Event('frame-grab', {frame: frame});
+      document.dispatchEvent(evt);
+      controller.enqueue(frame);
+    } catch (error) {
+      console.error(error);
+    }
+    },
+    flush(controller) {
+      const evt = new Event('frame-grab-complete', {frames: frames});
+      document.dispatchEvent(evt);
+    }
+});
 export {
-    detectFace
+    detectFace,
+    grabFrames
 }

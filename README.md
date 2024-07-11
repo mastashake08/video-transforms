@@ -1,8 +1,8 @@
 # video-transforms
 
-[![NPM](https://nodei.co/npm/video-transforms.png)](https://nodei.co/npm/video-transforms/)
+[![NPM](https://nodei.co/npm/@mastashake08/video-transforms.png)](https://nodei.co/npm/@mastashake08/video-transforms/)
 
-[![NPM version](https://img.shields.io/npm/v/video-transforms.svg)](https://www.npmjs.com/package/video-transforms)
+[![NPM version](https://img.shields.io/npm/v/video-transforms.svg)](https://www.npmjs.com/package/@mastashake08/video-transforms)
 [![Build Status](https://travis-ci.org/mastashake08/video-transforms.svg?branch=master)](https://travis-ci.org/mastashake08/video-transforms)
 [![Coverage Status](https://coveralls.io/repos/github/mastashake08/video-transforms/badge.svg?branch=master)](https://coveralls.io/github/mastashake08/video-transforms?branch=master)
 
